@@ -1,0 +1,25 @@
+<?php	
+	
+	$servername = getenv('IP');
+    $username = getenv('C9_USER');
+    define('DB_HOST', $servername);
+    define('DB_USER', $username);
+    define('DB_PASSWORD', '');
+    define('DB_NAME', 'c9');
+    
+	$link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);	
+	
+	$insertFamilyMembersQuery = 
+	   "INSERT INTO family_tree(patient_id, relation, name, gender, degree, mother_id, father_id)
+		VALUES('{$patientID}', '{$relation}', '{$name}', '{$gender}', '{$degree}', {$motherID}, {$fatherID});";			
+	$insertFamilyMembersResult = mysqli_query($link, $insertFamilyMembersQuery);
+				
+				
+	$selectFamilyTreeQuery = 
+	   "SELECT *
+		FROM family_tree
+		WHERE patient_id = $patientID
+			AND ($where);";
+	$selectFamilyTreeResult = mysqli_query($link, $selectFamilyTreeQuery);
+	
+	?>
