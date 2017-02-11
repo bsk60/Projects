@@ -1,0 +1,5 @@
+This folder contains the files for a prototype website I created in Advanced Web Technology Designs. 
+The purpose of the website was for users to enter ingredients he/she had on hand and was able to receive recipes based on the ingredients.
+The ingredients were stored in a MySql database where an AJAX call was made to retrieve those ingredients from the database and stored into
+a placeholder array where it went into a second AJAX call to send that array as the parameters for the Food API and pulling recipes based
+on those sent parameters (code found in myrecipespull.js). 
