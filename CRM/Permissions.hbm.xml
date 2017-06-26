@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 17, 2017 10:19:50 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.roadtex.model.Permissions" table="PERMISSIONS">
+        <id name="id" type="int" access="field">
+            <column name="ID" />
+             <generator class="increment"></generator>
+        </id>
+        <many-to-one name="role" class="com.roadtex.model.Role" fetch="join">
+            <column name="ROLE" />
+        </many-to-one>
+        <property name="addCustomer" type="boolean">
+            <column name="ADDCUSTOMER" />
+        </property>
+        <property name="changePass" type="boolean">
+            <column name="CHANGEPASS" />
+        </property>
+        <property name="adminSettings" type="boolean">
+            <column name="ADMINSETTINGS" />
+        </property>
+        <property name="users" type="boolean">
+            <column name="USERS" />
+        </property>
+        <property name="userSettings" type="boolean">
+            <column name="USERSETTINGS" />
+        </property>
+        <property name="roles" type="boolean">
+            <column name="ROLES" />
+        </property>
+        <property name="rolesPermission" type="boolean">
+            <column name="ROLESPERMISSION" />
+        </property>
+    </class>
+</hibernate-mapping>
