@@ -1,0 +1,5 @@
+A simple prototype CRM (Customer Relationship Management) tool created using Java for MVC framework, Hibernate ORM tool for backend, 
+and JSP/HTML5/CSS3/Javascript/Bootstrap for frontend. The backend functionality such as adding in roles, employees, and permissions works fine, but 
+updating a role's permissions based on roleID still needs to be further worked on. The frontend is very basic as functionality for the 
+prototype was the most important part and frontend will be further improved by incorporating AngularJS framework and migrate the application
+into a SPA (Single Page Application).
