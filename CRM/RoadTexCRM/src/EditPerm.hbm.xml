@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 10, 2017 9:55:45 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <joined-subclass name="com.roadtex.model.EditPerm" extends="com.roadtex.model.Permissions" table="EDITPERM" lazy="false">
+        <key>
+            <column name="ROLEID" />
+        </key>
+        <property name="id" type="java.lang.Long">
+            <column name="ID" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>
