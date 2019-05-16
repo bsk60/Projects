@@ -1,5 +1,8 @@
-Simple Discord Bot thats WIP and made using JQuery, Javascript, and Node.js. 
+Simple Discord Bot thats WIP and made using Javascript and other JS libraries such as Node.js and JQuery. 
 Currently the bot is a music player with some other simple commands (coin flip and basic 8 ball), but will be implementing a "rolling simulator" which is popular in modern phone games along with other new features.
 Node modules and json packages are not included, but the modules used are: FFMPEG-binaries, ytdl-core, discord.js, discord.js-commando, and opusscript.
 
-
+Update: 5/16/19
+Uploaded summon.js and moonlight.js files which act as discord bot commands to run a simulator on "pulls" which is a common element in majority of phone games. This could be applied to anything of similar function 
+for any mobile game as long as there's an api to pull image assets from. Will make the files more clean by removing object of inputs to make it more readable. 
+In the future will try to make a simple web application of this simulator using vue and maybe webpack.
