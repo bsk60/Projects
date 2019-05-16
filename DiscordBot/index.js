@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const Commando = require('discord.js-commando');
 const YTDL = require('ytdl-core');
 const bot = new Commando.Client();
-const token = 'test'
+const token = 'discord token'
 const commandSymbol = ".";
 var songQueue = [];
 
