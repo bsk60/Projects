@@ -1,0 +1,5 @@
+Simple Discord Bot thats WIP and made using JQuery, Javascript, and Node.js. 
+Currently the bot is a music player with some other simple commands (coin flip and basic 8 ball), but will be implementing a "rolling simulator" which is popular in modern phone games along with other new features.
+Node modules and json packages are not included, but the modules used are: FFMPEG-binaries, ytdl-core, discord.js, discord.js-commando, and opusscript.
+
+
