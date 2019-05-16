@@ -4,9 +4,9 @@ class StopCommand extends commando.Command {
     constructor(client) {
         super(client, 
         {
-            name: 'stop',
+            name: 'stop2',
             group: 'music',
-            memberName: 'stop',
+            memberName: 'stop2',
             description: 'Stops current song'
         });
     }
